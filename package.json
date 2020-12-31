@@ -4,7 +4,7 @@
         "url": "https://github.com/textlint-ja/textlint-rule-no-dropping-i/issues"
     },
     "dependencies": {
-        "kuromojin": "^1.2.1",
+        "kuromojin": "^2.1.1",
         "textlint-rule-helper": "^1.1.4"
     },
     "description": "い抜き言葉を検出するtextlint rule",
