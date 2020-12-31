@@ -1,7 +1,7 @@
 // LICENSE : MIT
 "use strict";
-const { RuleHelper } = require("textlint-rule-helper");
-const kuromojin = require("kuromojin");
+import { RuleHelper } from "textlint-rule-helper";
+import { tokenize } from "kuromojin";
 
 function isTargetWord(token) {
     return token.pos == "助詞" && token.pos_detail_1 == "接続助詞" && token.basic_form == "て";
@@ -20,7 +20,7 @@ module.exports = function(context) {
                 return;
             }
             let text = getSource(node);
-            return kuromojin.tokenize(text).then(tokens => {
+            return tokenize(text).then(tokens => {
                 tokens.reduce((prev, current) => {
                     if (isTargetWord(prev) && isMasuWord(current)) {
                         report(
