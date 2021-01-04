@@ -1,4 +1,4 @@
-# textlint-rule-no-dropping-i [![Build Status](https://travis-ci.org/textlint-ja/textlint-rule-no-dropping-i.svg?branch=master)](https://travis-ci.org/textlint-ja/textlint-rule-no-dropping-i) [![Gitter](https://badges.gitter.im/textlint-ja/textlint-ja.svg)](https://gitter.im/textlint-ja/textlint-ja)
+# textlint-rule-no-dropping-i [![Actions Status: test](https://github.com/textlint-ja/textlint-rule-no-dropping-i/workflows/test/badge.svg)](https://github.com/textlint-ja/textlint-rule-no-dropping-i/actions?query=workflow%3A"test")
 
 い抜き言葉を検出する[textlint](https://github.com/textlint/textlint "textlint")ルールです。
 
