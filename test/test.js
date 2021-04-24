@@ -24,6 +24,11 @@ tester.run("no-dropping-i", rule, {
                     column: 5
                 }
             ]
-        }
+        },
+        // TODO: support
+        // {
+        //     text: "人が話してる",
+        //     errors: [{}]
+        // }
     ]
 });
