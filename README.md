@@ -9,8 +9,6 @@
 
     npm install @textlint-ja/textlint-rule-no-dropping-i
 
-textlint >= 5.0
-
 ## Usage
 
 Put `@textlint-ja/textlint-rule-no-dropping-i` to `.textlintrc`
