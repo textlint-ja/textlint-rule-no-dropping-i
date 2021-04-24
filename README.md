@@ -9,11 +9,9 @@
 
     npm install @textlint-ja/textlint-rule-no-dropping-i
 
-textlint >= 5.0
-
 ## Usage
 
-Put "@textlint-ja/textlint-rule-no-dropping-i" to `.textlintrc`
+Put `@textlint-ja/textlint-rule-no-dropping-i` to `.textlintrc`
 
 ```js
 {
@@ -22,6 +20,11 @@ Put "@textlint-ja/textlint-rule-no-dropping-i" to `.textlintrc`
   }
 }
 ```
+
+## 参考
+
+- [い抜き言葉](https://www.students.keio.ac.jp/hy/law/class/registration/files/a1399948036427.pdf)
+- [適切な表現](https://www.nhk.or.jp/kokokoza/tv/basickokugo/archive/basic_kokugo_20.pdf)
 
 ## Contributing
 
