@@ -1,7 +1,7 @@
-import assert from "power-assert";
 import rule from "../src/no-dropping-i";
 import TextLintTester from "textlint-tester";
-var tester = new TextLintTester();
+
+const tester = new TextLintTester();
 tester.run("no-dropping-i", rule, {
     valid: ["見ています", "開発しています。"],
     invalid: [

@@ -4,16 +4,15 @@
         "url": "https://github.com/textlint-ja/textlint-rule-no-dropping-i/issues"
     },
     "dependencies": {
-        "kuromojin": "^2.1.1",
-        "textlint-rule-helper": "^1.1.4"
+        "kuromojin": "^3.0.0",
+        "textlint-rule-helper": "^2.1.1"
     },
     "description": "い抜き言葉を検出するtextlint rule",
     "devDependencies": {
-        "@babel/core": "^7.9.0",
-        "@babel/preset-env": "^7.9.0",
-        "power-assert": "^1.4.1",
-        "prettier": "^1.15.3",
-        "textlint-scripts": "^2.1.0"
+        "@babel/core": "^7.13.16",
+        "@babel/preset-env": "^7.13.15",
+        "prettier": "^2.2.1",
+        "textlint-scripts": "^3.0.0"
     },
     "directories": {
         "test": "test"
