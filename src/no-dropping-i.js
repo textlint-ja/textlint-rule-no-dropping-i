@@ -21,7 +21,12 @@ module.exports = function(context) {
             }
             const text = getSource(node);
             return tokenize(text).then(tokens => {
-                tokens.reduce((prev, current) => {
+                tokens.forEach((token, index) => {
+                    const current = token;
+                    const prev = tokens[index - 1];
+                    if (!prev || !current) {
+                        return;
+                    }
                     if (isTargetWord(prev) && isMasuWord(current)) {
                         report(
                             node,
@@ -30,7 +35,6 @@ module.exports = function(context) {
                             })
                         );
                     }
-                    return current;
                 });
             });
         }
