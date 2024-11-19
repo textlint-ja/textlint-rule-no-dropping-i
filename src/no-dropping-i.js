@@ -3,12 +3,20 @@
 import { RuleHelper } from "textlint-rule-helper";
 import { tokenize } from "kuromojin";
 
-function isTargetWord(token) {
+function isMasuTargetWord(token) {
     return token.pos === "助詞" && token.pos_detail_1 === "接続助詞" && token.basic_form === "て";
 }
 
 function isMasuWord(token) {
     return token.pos === "助動詞" && token.pos_detail_1 === "*" && token.basic_form === "ます";
+}
+
+function isTeruTargetWord(token){
+    return token.pos === "動詞" && token.pos_detail_1 === "自立";
+}
+
+function isTeruWord(token) {
+    return token.pos === "動詞" && token.pos_detail_1 === "非自立" && token.basic_form === "てる";
 }
 
 module.exports = function(context) {
@@ -27,7 +35,7 @@ module.exports = function(context) {
                     if (!prev || !current) {
                         return;
                     }
-                    if (isTargetWord(prev) && isMasuWord(current)) {
+                    if ((isMasuTargetWord(prev) && isMasuWord(current)) || (isTeruTargetWord(prev) && isTeruWord(current))) {
                         report(
                             node,
                             new RuleError("い抜き言葉を使用しています。", {

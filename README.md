@@ -2,8 +2,8 @@
 
 い抜き言葉を検出する[textlint](https://github.com/textlint/textlint "textlint")ルールです。
 
-- ◯ 開発しています。
-- ✗ 開発してます。
+- ◯ 開発しています。 / 開発している。
+- ✗ 開発してます。 / 開発してる。
 
 ## Installation
 
