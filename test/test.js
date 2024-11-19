@@ -6,9 +6,12 @@ tester.run("no-dropping-i", rule, {
     valid: [
         "見ています",
         "開発しています。",
+        "休んでいました。",
         "笑っている。",
         "見学している。",
         "遊んでいる。",
+        "勉強していない。",
+        "困っていません。"
     ],
     invalid: [
         {
@@ -28,6 +31,16 @@ tester.run("no-dropping-i", rule, {
                     message: "い抜き言葉を使用しています。",
                     line: 1,
                     column: 5
+                }
+            ]
+        },
+        {
+            text: "休んでました。",
+            errors: [
+                {
+                    message: "い抜き言葉を使用しています。",
+                    line: 1,
+                    column: 4
                 }
             ]
         },
@@ -58,6 +71,26 @@ tester.run("no-dropping-i", rule, {
                     message: "い抜き言葉を使用しています。",
                     line: 1,
                     column: 3
+                }
+            ]
+        },
+        {
+            text: "勉強してない。",
+            errors: [
+                {
+                    message: "い抜き言葉を使用しています。",
+                    line: 1,
+                    column: 4
+                }
+            ]
+        },
+        {
+            text: "困ってません。",
+            errors: [
+                {
+                    message: "い抜き言葉を使用しています。",
+                    line: 1,
+                    column: 4
                 }
             ]
         },
