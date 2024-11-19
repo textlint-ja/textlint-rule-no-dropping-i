@@ -16,7 +16,7 @@ function isTeruTargetWord(token){
 }
 
 function isTeruWord(token) {
-    return token.pos === "動詞" && token.pos_detail_1 === "非自立" && token.basic_form === "てる";
+    return token.pos === "動詞" && token.pos_detail_1 === "非自立" && (token.basic_form === "てる" || token.basic_form === "でる");
 }
 
 module.exports = function(context) {
