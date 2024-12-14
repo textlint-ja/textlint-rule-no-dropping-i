@@ -10,7 +10,7 @@
   "description": "い抜き言葉を検出するtextlint rule",
   "devDependencies": {
     "prettier": "^2.2.1",
-    "textlint-scripts": "^3.0.0"
+    "textlint-scripts": "^12.6.1"
   },
   "directories": {
     "test": "test"
