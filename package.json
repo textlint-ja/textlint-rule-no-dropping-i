@@ -58,6 +58,6 @@
     "test": "textlint-scripts test",
     "watch": "textlint-scripts build --watch"
   },
-  "version": "3.0.0",
+  "version": "3.0.1",
   "packageManager": "pnpm@12.21.0"
 }
